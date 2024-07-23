@@ -1,0 +1,35 @@
+<div class="container">
+  <h1 class="text-center mt-5 text-light">Products</h1>
+  <div class="row mt-5">
+      <div class="col-4">
+          <input [(ngModel)]="Product.id" type="text" class="form-control m-1" placeholder="id">
+      </div>
+      <div class="col-4">
+          <input [(ngModel)]="Product.name" type="text" class="form-control m-1" placeholder="name">
+      </div>
+      <div class="col-4">
+          <input [(ngModel)]="Product.description" type="text" class="form-control m-1" placeholder="description">
+      </div>
+      <div class="col-4">
+          <input [(ngModel)]="Product.image" type="text" class="form-control m-1" placeholder="image url">
+      </div>
+      <div class="col-4">
+          <button (click)="ajout()" class="btn form-control m-1 text-light">add</button>
+      </div>
+  </div>
+
+  <div class="row mt-5">
+      <div class="col-3" *ngFor="let item of Products">
+          <div class="card p-1">
+              <div class="card-image">
+                  <img class="w-100" [src]="item.image" alt="">
+              </div>
+              <div class="card-body">
+                  <h2>{{item.id}}</h2>
+                  <p>{{item.name}}</p>
+                  <p>{{item.description}}</p>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
