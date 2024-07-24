@@ -21,7 +21,7 @@ import {AppRoutingModule} from 'app-routing.module'
 })
 export class AppModule { }
 */
-import { NgModule } from '@angular/core';
+/*import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { FirstComponent } from './first/first.component'; // Ensure this path is correct
@@ -37,4 +37,4 @@ import { FirstComponent } from './first/first.component'; // Ensure this path is
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule { }*/
